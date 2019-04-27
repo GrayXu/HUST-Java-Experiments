@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="148.0" prefWidth="558.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FailController">
+   <children>
+      <Label centerShape="false" layoutX="14.0" prefHeight="148.0" prefWidth="544.0" scaleShape="false" text="网络连接失败。请尝试重启系统。" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Microsoft YaHei Bold" size="36.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+         <opaqueInsets>
+            <Insets left="20.0" right="20.0" />
+         </opaqueInsets></Label>
+   </children>
+</AnchorPane>

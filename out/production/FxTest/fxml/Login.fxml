@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXBadge?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="rootLoginPanel" maxHeight="-Infinity" maxWidth="400.0" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="200.0" prefWidth="200.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="170.0" prefWidth="181.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="119.0" minWidth="100.0" prefWidth="119.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="55.0" vgrow="NEVER" />
+    <RowConstraints minHeight="-Infinity" prefHeight="55.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="-Infinity" prefHeight="55.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="labelStatus" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="280.0" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </GridPane.margin></Label>
+      <JFXButton fx:id="buttonLoginDoctor" buttonType="RAISED" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#doctorLogin" style="-fx-background-color: #99cc33;" text="doctors" textFill="WHITE" GridPane.rowIndex="3">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="5.0" left="20.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </JFXButton>
+      <JFXButton fx:id="buttonLoginPatient" buttonType="RAISED" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" onMouseClicked="#patientLogin" prefWidth="170.0" style="-fx-background-color: #99cc33;" text="patients" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </JFXButton>
+       <JFXButton fx:id="buttonPatientSignUp" buttonType="RAISED" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" onMouseClicked="#patientSignUp" prefWidth="100.0" style="-fx-background-color: #ff9933;" text="sign up" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+           <font>
+               <Font size="18.0" />
+           </font>
+           <GridPane.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+           </GridPane.margin>
+       </JFXButton>
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Hospital System" textFill="#999900" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Brush Script MT Italic" size="39.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="5.0" left="10.0" right="10.0" />
+         </GridPane.margin>
+      </Label>
+      <Separator prefWidth="200.0" GridPane.columnSpan="2147483647" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="10.0" right="10.0" />
+         </GridPane.margin>
+      </Separator>
+      <JFXBadge text="xzcv" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
+         <children>
+            <JFXTextField fx:id="inputUsername" labelFloat="true" maxWidth="-Infinity" onKeyPressed="#onInputUsernameAction" onKeyTyped="#onInputUsernameAction" onMouseClicked="#onInputUsernameAction" onMousePressed="#onInputUsernameAction" prefHeight="31.0" prefWidth="263.0" promptText="ID" unFocusColor="#515151" GridPane.columnSpan="2147483647" GridPane.hgrow="ALWAYS" GridPane.valignment="BOTTOM">
+                <GridPane.margin>
+                    <Insets bottom="10.0" left="20.0" right="20.0" />
+                </GridPane.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+         </children></JFXBadge>
+       <JFXPasswordField fx:id="inputPassword" labelFloat="true" onKeyPressed="#onInputPasswordAction" onKeyTyped="#onInputPasswordAction" onMouseClicked="#onInputPasswordAction" onMousePressed="#onInputPasswordAction" prefHeight="31.0" prefWidth="278.0" promptText="Password" unFocusColor="#515050" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+           <GridPane.margin>
+               <Insets bottom="10.0" left="20.0" right="20.0" />
+           </GridPane.margin>
+           <font>
+               <Font size="15.0" />
+           </font>
+       </JFXPasswordField>
+      <ImageView fx:id="imageLogin" fitHeight="152.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+         </ImageView>
+   </children>
+</GridPane>

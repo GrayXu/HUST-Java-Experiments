@@ -1,7 +1,7 @@
 # HUST-Java-Experiments
 Hust J experiment in Spring 2019. 华中科技大学Java实验
 
-整体设计基于[@husixu1](https://github.com/husixu1)的repo: [HUST-Homeworks/JavaExperiment/](https://github.com/husixu1/HUST-Homeworks/tree/master/JavaExperiment)，在外观和功能上进行了迭代。
+基础设计基于[@husixu1](https://github.com/husixu1)的repo: [HUST-Homeworks/JavaExperiment/](https://github.com/husixu1/HUST-Homeworks/tree/master/JavaExperiment)，在外观和功能上进行了**迭代**。
 
 
 ## 功能
